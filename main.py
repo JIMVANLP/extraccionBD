@@ -1,4 +1,5 @@
 import json
+import sys
 from web_automator import WebAutomator
 
 def main(config_path):
@@ -17,5 +18,6 @@ def main(config_path):
         automator.close_driver()
 
 if __name__ == "__main__":
-    config_path = 'config.json'
+    # Verificar si se pasó un argumento de línea de comandos para la ruta del archivo de configuración
+    config_path = sys.argv[1] if len(sys.argv) > 1 else "config.json"
     main(config_path)

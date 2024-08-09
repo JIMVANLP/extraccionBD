@@ -16,19 +16,50 @@
       },
       {
         "action": "extract_list_info",
-        "selector": {"by": "css selector", "value": "ol.ui-search-layout.ui-search-layout--stack.shops__layout"}
-      },
+        "list_selector": {
+          "by": "css selector",
+          "value": "ol.ui-search-layout.ui-search-layout--stack.shops__layout"
+        },
+        "item_selector": "li.ui-search-layout__item.shops__layout-item.ui-search-layout__stack",
+        "elements_to_extract": [
+          {
+            "name": "Producto",
+            "selector": "h2.ui-search-item__title"
+          },
+          {
+            "name": "Precio",
+            "selector": "span.andes-money-amount__fraction"
+          }
+        ]
+      },  
       {
-        "action": "scroll",
-        "selector": {"by": "css selector", "value": "a.andes-pagination__link.shops__pagination-link"}
-      },
+        "action": "click_cookies_banner",
+        "selector": {
+          "by": "css selector",
+          "value": "button.cookie-consent-banner-opt-out__action--key-accept"
+        }
+      },  
       {
-        "action": "click_next_page",
-        "selector": {"by": "css selector", "value": "a.andes-pagination__link.shops__pagination-link"}
+        "action": "click",
+        "selector": {"by": "css selector", "value": "li.andes-pagination__button.andes-pagination__button--next a.andes-pagination__link"}
       },
       {
         "action": "extract_list_info",
-        "selector": {"by": "css selector", "value": "ol.ui-search-layout.ui-search-layout--stack.shops__layout"}
+        "list_selector": {
+          "by": "css selector",
+          "value": "ol.ui-search-layout.ui-search-layout--stack.shops__layout"
+        },
+        "item_selector": "li.ui-search-layout__item.shops__layout-item.ui-search-layout__stack",
+        "elements_to_extract": [
+          {
+            "name": "Producto",
+            "selector": "h2.ui-search-item__title"
+          },
+          {
+            "name": "Precio",
+            "selector": "span.andes-money-amount__fraction"
+          }
+        ]
       }
     ]
   }
