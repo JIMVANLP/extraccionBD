@@ -1,0 +1,85 @@
+{
+  "driver_path": "C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe",
+  "actions": [
+    {
+      "action": "open_url",
+      "url": "https://www.ligamx.net/cancha/estadisticahistorica"
+    },
+    {
+      "action": "select_season",
+      "selector": {"by": "css selector", "value": "#temporadasSelect"},
+      "season_name": "2020-2021"
+    },
+    {
+      "action": "click_search",
+      "selector": {"by": "id", "value": "btnBuscar"}
+    },
+    {
+      "action": "extract_table",
+      "table_selector": {"by": "css selector", "value": ".default.tbl_grals"},
+      "season_name": "2020-2021"
+    },
+    {
+      "action": "select_season",
+      "selector": {"by": "css selector", "value": "#temporadasSelect"},
+      "season_name": "2023-2024"
+    },
+    {
+      "action": "click_search",
+      "selector": {"by": "id", "value": "btnBuscar"}
+    },
+    {
+      "action": "extract_table",
+      "table_selector": {"by": "css selector", "value": ".default.tbl_grals"},
+      "season_name": "2023-2024"
+    },
+    {
+      "action": "select_season",
+      "selector": {"by": "css selector", "value": "#temporadasSelect"},
+      "season_name": "2022-2023"
+    },
+    {
+      "action": "click_search",
+      "selector": {"by": "id", "value": "btnBuscar"}
+    },
+    {
+      "action": "extract_table",
+      "table_selector": {"by": "css selector", "value": ".default.tbl_grals"},
+      "season_name": "2022-2023"
+    },
+    {
+      "action": "select_season",
+      "selector": {"by": "css selector", "value": "#temporadasSelect"},
+      "season_name": "2021-2022"
+    },
+    {
+      "action": "click_search",
+      "selector": {"by": "id", "value": "btnBuscar"}
+    },
+    {
+      "action": "extract_table",
+      "table_selector": {"by": "css selector", "value": ".default.tbl_grals"},
+      "season_name": "2021-2022"
+    },
+    {
+      "action": "select_season",
+      "selector": {"by": "css selector", "value": "#temporadasSelect"},
+      "season_name": "2019-2020"
+    },
+    {
+      "action": "click_search",
+      "selector": {"by": "id", "value": "btnBuscar"}
+    },
+    {
+      "action": "extract_table",
+      "table_selector": {"by": "css selector", "value": ".default.tbl_grals"},
+      "season_name": "2019-2020"
+    }       
+
+  ]
+}
+
+
+
+  
+  

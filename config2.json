@@ -1,0 +1,37 @@
+{
+    "driver_path": "C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe",
+    "actions": [
+      {
+        "action": "open_url",
+        "url": "https://www.mercadolibre.com.mx/"
+      },
+      {
+        "action": "input",
+        "selector": {"by": "name", "value": "as_word"},
+        "text": "PC gamer"
+      },
+      {
+        "action": "click",
+        "selector": {"by": "xpath", "value": "//button[@type='submit']"}
+      },
+      {
+        "action": "extract_list_info",
+        "selector": {"by": "css selector", "value": "ol.ui-search-layout.ui-search-layout--stack.shops__layout"}
+      },
+      {
+        "action": "scroll",
+        "selector": {"by": "css selector", "value": "a.andes-pagination__link.shops__pagination-link"}
+      },
+      {
+        "action": "click_next_page",
+        "selector": {"by": "css selector", "value": "a.andes-pagination__link.shops__pagination-link"}
+      },
+      {
+        "action": "extract_list_info",
+        "selector": {"by": "css selector", "value": "ol.ui-search-layout.ui-search-layout--stack.shops__layout"}
+      }
+    ]
+  }
+  
+  
+  
