@@ -1,0 +1,45 @@
+{
+  "driver_path": "C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe",
+  "actions": [
+    {
+      "action": "open_url",
+      "url": "https://uttorreon.mx/"
+    },
+    {
+      "action": "input",
+      "selector": {"by": "id", "value": "email"},
+      "text": "zadoc.ilp@gmail.com"
+    },
+    {
+      "action": "input",
+      "selector": {"by": "id", "value": "password"},
+      "text": "Katana750"
+    },
+    {
+      "action": "click",
+      "selector": {"by": "xpath", "value": "//button[@type='submit']"}
+    },
+    {
+      "action": "click",
+      "selector": {"by": "xpath", "value": "//span[contains(text(), 'Mi Espacio')]/parent::a"}
+    },
+    {
+      "action": "click",
+      "selector": {"by": "xpath", "value": "//span[contains(text(), 'Académico')]/parent::a"}
+    },
+    {
+      "action": "click",
+      "selector": {"by": "xpath", "value": "//span[contains(text(), 'Mis Calificaciones')]/parent::a"}
+    },
+    {
+      "action": "extract_table",
+      "table_selector": {"by": "id", "value": "Tabla"}
+    }
+  ]
+}
+
+
+
+
+  
+  

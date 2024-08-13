@@ -1,0 +1,38 @@
+{
+  "driver_path": "C:\\Users\\Admin\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe",
+  "actions": [
+    {
+      "action": "open_url",
+      "url": "https://www.meteored.mx/"
+    },
+    {
+      "action": "input",
+      "selector": {"by": "id", "value": "search_pc"},
+      "text": "torreon"
+    },
+    {
+      "action": "click",
+      "selector": {"by": "css selector", "value": "span.bizq"}
+    },
+    {
+      "action": "extract_list_info",
+      "list_selector": {
+        "by": "css selector",
+        "value": "ul.grid-container-7.dias_w"
+      },
+      "item_selector": "li.grid-item",
+      "elements_to_extract": [
+        {
+          "name": "Dia",
+          "selector": "span.text-0"
+        },
+        {
+          "name": "Temperatura",
+          "selector": "span.temp"
+        }
+      ]
+    }   
+  ]
+}
+  
+  

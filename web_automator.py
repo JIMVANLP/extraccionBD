@@ -172,7 +172,7 @@ class WebAutomator:
                 elements_to_extract = action["elements_to_extract"]
                 extracted_data = self.extract_list_info(list_selector, item_selector, elements_to_extract)
                 if extracted_data:
-                    filename = "lista_productos.xlsx"
+                    filename = "lista_Result.xlsx"
                     self.save_list_to_excel(extracted_data, filename)
             elif action["action"] == "click_cookies_banner":
                 self.close_cookies_banner(action["selector"])
